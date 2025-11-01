@@ -47,6 +47,7 @@ const Index = (props: Props) => {
 			return;
 		}
 		if (selectedTower === null) {
+			if (game.towers[index].length === 0) return;
 			setSelectedTower(index);
 			return;
 		}
