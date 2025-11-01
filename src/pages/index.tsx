@@ -150,7 +150,8 @@ const Index = (props: Props) => {
 						<HanoiTower
 							key={index}
 							tower={tower}
-							maxSizeDisc={disks * 20}
+							discs={game?.getDiscsCount() ?? 1}
+							maxSizeDisc={(game?.getDiscsCount() ?? 5) * 20}
 							onClick={() => onTowerClicked(index)}
 							discSizeSelected={selectedTower !== null ? game.topDiscAt(selectedTower)?.size ?? 0 : 0}
 						/>

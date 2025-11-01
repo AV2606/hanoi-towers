@@ -36,4 +36,8 @@ export class HanoiGame {
         const tower = this.towers[towerIndex];
         return tower.length > 0 ? tower[tower.length - 1] : null;
     }
+
+    getDiscsCount(): number {
+        return this.towers.reduce((acc, tower) => acc + tower.length, 0);
+    }
 }

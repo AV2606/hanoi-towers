@@ -4,6 +4,7 @@ import React from "react";
 type Props = {
 	tower: Tower;
 	maxSizeDisc: number;
+	discs: number;
 	onClick: () => void;
 	discSizeSelected: number;
 };
@@ -19,7 +20,8 @@ const HanoiTower = (props: Props) => {
 				flexDirection: "column",
 				alignItems: "center",
 				gap: "2px",
-				minHeight: "200px",
+				minHeight: "240px",
+				height: 24 * props.discs,
 				justifyContent: "flex-end",
 				padding: "10px",
 				paddingBottom: 0,
