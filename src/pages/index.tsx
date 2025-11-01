@@ -93,6 +93,7 @@ const Index = (props: Props) => {
 							textAlign: "center",
 							fontSize: "24px",
 							fontWeight: "bold",
+							width: "75vw",
 						}}
 						onClick={() => {
 							resetGame(towers, disks);
