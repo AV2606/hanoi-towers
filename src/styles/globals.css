@@ -45,9 +45,7 @@ body {
 
 body {
 	color: var(--foreground);
-	font-family: "DorianCLM";
-	/* font-family: "Segoe UI", Tahoma, "Arial Hebrew", "Noto Sans Hebrew", sans-serif; */
-	/* font-family: Arial, Helvetica, sans-serif; */
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
