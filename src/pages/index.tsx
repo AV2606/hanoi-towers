@@ -3,7 +3,7 @@ import { HanoiGame } from "@/hanoi/game";
 import { Button, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
 
-type Props = never;
+type Props = unknown;
 
 const Index = (props: Props) => {
 	const [towers, setTowers] = useState<number>(3);
